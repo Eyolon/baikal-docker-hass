@@ -7,3 +7,7 @@ LABEL website="http://sabre.io/baikal/"
 
 RUN apt update && apt install -y php8.2-pgsql
 COPY --chown=nginx:nginx Plugin.php /var/www/baikal/vendor/sabre/dav/lib/CalDAV/Plugin.php
+COPY run.sh /
+RUN chmod a+x /run.sh
+
+CMD [ "/run.sh" ]

@@ -1,0 +1,11 @@
+name: "Baikal hassio patched"
+description: "Baikal hassio patched by MrAlucardDante https://github.com/MrAlucardDante/baikal-docker-hass"
+version: "0.0.1"
+slug: "Baikal_hassio_patched"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
